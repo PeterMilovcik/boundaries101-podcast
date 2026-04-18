@@ -5,7 +5,7 @@ permalink: /episodes/
 ---
 
 <div class="episodes-hero">
-  <h1>&#127911; All Episodes</h1>
+  <h1><i class="fa-solid fa-headphones"></i> All Episodes</h1>
   <p class="episodes-subtitle">{{ site.posts | size }} episodes &mdash; newest first</p>
 </div>
 
@@ -23,9 +23,9 @@ permalink: /episodes/
     </div>
     <p class="episode-excerpt">{{ post.description }}</p>
     <div class="episode-links">
-      <a href="{{ post.url | prepend: site.baseurl }}">&#128214; Read article</a>
+      <a href="{{ post.url | prepend: site.baseurl }}"><i class="fa-solid fa-book-open"></i> Read article</a>
       {% if post.youtube_url %}
-        <a href="{{ post.youtube_url }}" target="_blank">&#127909; Watch on YouTube</a>
+        <a href="{{ post.youtube_url }}" target="_blank"><i class="fa-brands fa-youtube"></i> Watch on YouTube</a>
       {% endif %}
     </div>
   </li>
