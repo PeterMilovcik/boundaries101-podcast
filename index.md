@@ -9,10 +9,10 @@ title: Home
   <p class="tagline">Practical, no-nonsense coaching for men who want to build and protect their self-respect. Learn the skills most men were never taught.</p>
   
   <div class="platform-buttons">
-    <a href="https://youtube.com/@Boundaries101forMen" class="platform-btn btn-youtube" target="_blank">&#9654; YouTube</a>
-    <a href="https://open.spotify.com/show/2uoKNnuSgaH1G9shiOMIu8" class="platform-btn btn-spotify" target="_blank">&#9835; Spotify</a>
-    <a href="https://music.amazon.com/podcasts/boundaries-101-for-men" class="platform-btn btn-amazon" target="_blank">&#9835; Amazon Music</a>
-    <a href="{{ site.baseurl }}/feed.xml" class="platform-btn btn-rss">&#128226; RSS Feed</a>
+    <a href="https://youtube.com/@Boundaries101forMen" class="platform-btn btn-youtube" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a>
+    <a href="https://open.spotify.com/show/2uoKNnuSgaH1G9shiOMIu8" class="platform-btn btn-spotify" target="_blank"><i class="fa-brands fa-spotify"></i> Spotify</a>
+    <a href="https://music.amazon.com/podcasts/boundaries-101-for-men" class="platform-btn btn-amazon" target="_blank"><i class="fa-brands fa-amazon"></i> Amazon Music</a>
+    <a href="{{ site.baseurl }}/feed.xml" class="platform-btn btn-rss"><i class="fa-solid fa-rss"></i> RSS Feed</a>
   </div>
 </div>
 
@@ -34,9 +34,9 @@ title: Home
     </div>
     <p class="episode-excerpt">{{ post.description }}</p>
     <div class="episode-links">
-      <a href="{{ post.url | prepend: site.baseurl }}">&#128214; Read article</a>
+      <a href="{{ post.url | prepend: site.baseurl }}"><i class="fa-solid fa-book-open"></i> Read article</a>
       {% if post.youtube_url %}
-        <a href="{{ post.youtube_url }}" target="_blank">&#127909; Watch on YouTube</a>
+        <a href="{{ post.youtube_url }}" target="_blank"><i class="fa-brands fa-youtube"></i> Watch on YouTube</a>
       {% endif %}
     </div>
   </li>
