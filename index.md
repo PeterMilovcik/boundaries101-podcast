@@ -30,6 +30,7 @@ title: Home
     <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
     <div class="episode-meta">
       {{ post.date | date: "%B %d, %Y" }}
+      {% if post.duration_minutes %}<span class="episode-duration">&middot; {{ post.duration_minutes }} min</span>{% endif %}
     </div>
     <p class="episode-excerpt">{{ post.description }}</p>
     <div class="episode-links">
