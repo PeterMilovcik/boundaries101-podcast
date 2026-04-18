@@ -16,10 +16,10 @@ layout: default
 
   {% if page.youtube_id %}
   <div class="youtube-embed">
-    <iframe 
-      src="https://www.youtube.com/embed/{{ page.youtube_id }}" 
+    <iframe
+      src="https://www.youtube.com/embed/{{ page.youtube_id }}"
       title="{{ page.title | escape }}"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>
     </iframe>
   </div>
@@ -31,12 +31,13 @@ layout: default
 
   <div class="listen-section">
     <h2>&#127911; Listen to This Episode</h2>
+    <p class="listen-subtitle">Available on all major podcast platforms</p>
     <div class="platform-buttons">
       {% if page.youtube_url %}
-        <a href="{{ page.youtube_url }}" class="platform-btn btn-youtube">&#9654; YouTube</a>
+        <a href="{{ page.youtube_url }}" class="platform-btn btn-youtube" target="_blank">&#9654; YouTube</a>
       {% endif %}
-      <a href="https://open.spotify.com/show/2uoKNnuSgaH1G9shiOMIu8" class="platform-btn btn-spotify">&#9835; Spotify</a>
-      <a href="https://music.amazon.com/podcasts/boundaries-101-for-men" class="platform-btn btn-amazon">&#9835; Amazon Music</a>
+      <a href="https://open.spotify.com/show/2uoKNnuSgaH1G9shiOMIu8" class="platform-btn btn-spotify" target="_blank">&#9835; Spotify</a>
+      <a href="https://music.amazon.com/podcasts/boundaries-101-for-men" class="platform-btn btn-amazon" target="_blank">&#9835; Amazon Music</a>
       <a href="{{ site.baseurl }}/feed.xml" class="platform-btn btn-rss">&#128226; RSS Feed</a>
     </div>
   </div>
