@@ -152,6 +152,11 @@ pre, code {
   text-decoration: none !important;
 }
 
+.platform-btn:focus-visible {
+  outline: 2px solid $brand-teal;
+  outline-offset: 2px;
+}
+
 .platform-btn i {
   font-size: 1.05em;
 }
@@ -274,30 +279,65 @@ pre, code {
 .episode-card .episode-links {
   margin-top: 1rem;
   display: flex;
-  gap: 1.5rem;
+  gap: 0.75rem;
   flex-wrap: wrap;
 }
 
 .episode-card .episode-links a {
   display: inline-flex;
   align-items: center;
-  padding: 0.4rem 0.9rem;
-  background: rgba($brand-teal, 0.08);
-  border: 1px solid rgba($brand-teal, 0.25);
-  border-radius: 6px;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
   font-size: 0.82rem;
   font-weight: 600;
-  color: $brand-teal;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
+  &:focus-visible {
+    outline: 2px solid $brand-teal;
+    outline-offset: 2px;
+  }
+}
+
+.episode-card .episode-links a i {
+  font-size: 0.95em;
+  flex-shrink: 0;
+}
+
+.episode-link-read {
+  background: rgba($brand-teal, 0.08);
+  border: 1px solid rgba($brand-teal, 0.25);
+  color: $brand-teal;
   &:hover {
     background: rgba($brand-teal, 0.18);
     border-color: $brand-teal;
     color: $brand-teal-light;
     transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba($brand-teal, 0.12);
     text-decoration: none;
   }
   &:visited { color: $brand-teal; }
+}
+
+.episode-link-youtube {
+  background: rgba(#FF0000, 0.08);
+  border: 1px solid rgba(#FF0000, 0.25);
+  color: #ff4444;
+  &:hover {
+    background: rgba(#FF0000, 0.18);
+    border-color: #FF0000;
+    color: #ff6666;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(#FF0000, 0.12);
+    text-decoration: none;
+  }
+  &:visited { color: #ff4444; }
+
+  .fa-arrow-up-right-from-square {
+    font-size: 0.7em;
+    opacity: 0.6;
+    margin-left: -0.15rem;
+  }
 }
 
 // Latest episode

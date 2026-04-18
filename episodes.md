@@ -23,9 +23,9 @@ permalink: /episodes/
     </div>
     <p class="episode-excerpt">{{ post.description }}</p>
     <div class="episode-links">
-      <a href="{{ post.url | prepend: site.baseurl }}"><i class="fa-solid fa-book-open"></i> Read article</a>
+      <a href="{{ post.url | prepend: site.baseurl }}" class="episode-link-read"><i class="fa-solid fa-book-open"></i> Read article</a>
       {% if post.youtube_url %}
-        <a href="{{ post.youtube_url }}" target="_blank"><i class="fa-brands fa-youtube"></i> Watch on YouTube</a>
+        <a href="{{ post.youtube_url }}" class="episode-link-youtube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i> Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
       {% endif %}
     </div>
   </li>

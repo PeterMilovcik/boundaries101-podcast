@@ -9,9 +9,9 @@ title: Home
   <p class="tagline">Practical, no-nonsense coaching for men who want to build and protect their self-respect. Learn the skills most men were never taught.</p>
   
   <div class="platform-buttons">
-    <a href="https://youtube.com/@Boundaries101forMen" class="platform-btn btn-youtube" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a>
-    <a href="https://open.spotify.com/show/2uoKNnuSgaH1G9shiOMIu8" class="platform-btn btn-spotify" target="_blank"><i class="fa-brands fa-spotify"></i> Spotify</a>
-    <a href="https://music.amazon.com/podcasts/boundaries-101-for-men" class="platform-btn btn-amazon" target="_blank"><i class="fa-brands fa-amazon"></i> Amazon Music</a>
+    <a href="https://youtube.com/@Boundaries101forMen" class="platform-btn btn-youtube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i> YouTube</a>
+    <a href="https://open.spotify.com/show/2uoKNnuSgaH1G9shiOMIu8" class="platform-btn btn-spotify" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-spotify"></i> Spotify</a>
+    <a href="https://music.amazon.com/podcasts/boundaries-101-for-men" class="platform-btn btn-amazon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-amazon"></i> Amazon Music</a>
     <a href="{{ site.baseurl }}/feed.xml" class="platform-btn btn-rss"><i class="fa-solid fa-rss"></i> RSS Feed</a>
   </div>
 </div>
@@ -34,9 +34,9 @@ title: Home
     </div>
     <p class="episode-excerpt">{{ post.description }}</p>
     <div class="episode-links">
-      <a href="{{ post.url | prepend: site.baseurl }}"><i class="fa-solid fa-book-open"></i> Read article</a>
+      <a href="{{ post.url | prepend: site.baseurl }}" class="episode-link-read"><i class="fa-solid fa-book-open"></i> Read article</a>
       {% if post.youtube_url %}
-        <a href="{{ post.youtube_url }}" target="_blank"><i class="fa-brands fa-youtube"></i> Watch on YouTube</a>
+        <a href="{{ post.youtube_url }}" class="episode-link-youtube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i> Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
       {% endif %}
     </div>
   </li>
