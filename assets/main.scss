@@ -27,6 +27,11 @@ body {
   color: #d0d6dd;
 }
 
+::selection {
+  background: rgba($brand-teal, 0.35);
+  color: #fff;
+}
+
 // ─── Header ──────────────────────────────────────────────────────────────────
 .site-header {
   background: linear-gradient(135deg, $brand-navy 0%, darken($brand-navy, 4%) 100%);
@@ -228,7 +233,7 @@ pre, code {
   border-left: 3px solid $brand-teal;
   border-radius: 0 12px 12px 0;
   padding: 1.5rem 1.5rem 1.5rem 1.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   transition: all 0.25s ease;
   position: relative;
 }
