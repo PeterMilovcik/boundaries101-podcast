@@ -11,6 +11,9 @@ layout: default
       {% if page.episode_number %}
         &middot; Episode {{ page.episode_number }}
       {% endif %}
+      {% if page.duration_minutes %}
+        &middot; {{ page.duration_minutes }} min listen
+      {% endif %}
     </p>
   </header>
 
@@ -41,5 +44,22 @@ layout: default
       <a href="{{ site.baseurl }}/feed.xml" class="platform-btn btn-rss">&#128226; RSS Feed</a>
     </div>
   </div>
+
+  {% if page.previous or page.next %}
+  <nav class="post-nav">
+    <div class="post-nav-prev">
+      {% if page.previous %}
+        <span class="post-nav-label">&larr; Previous Episode</span>
+        <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a>
+      {% endif %}
+    </div>
+    <div class="post-nav-next">
+      {% if page.next %}
+        <span class="post-nav-label">Next Episode &rarr;</span>
+        <a href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a>
+      {% endif %}
+    </div>
+  </nav>
+  {% endif %}
 
 </article>
