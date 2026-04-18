@@ -252,4 +252,3 @@ You’re not becoming cold. You’re becoming solid.
 
 🎥 **Watch on YouTube**: [How to STOP Guilt Tripping Without Feeling Selfish](https://youtu.be/viqaeZZk6O4)
 🎧 **Subscribe to our podcast**: [RSS Feed](https://petermilovcik.github.io/boundaries101-podcast/feed.xml)
-
