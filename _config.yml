@@ -1,0 +1,29 @@
+title: Boundaries 101 for Men
+description: >-
+  Practical, no-nonsense coaching for men who want to build and protect
+  their self-respect. Listen to our podcast episodes and read our articles.
+url: "https://petermilovcik.github.io"
+baseurl: "/boundaries101-podcast"
+theme: minima
+
+author:
+  name: Boundaries 101 for Men
+
+show_excerpts: true
+excerpt_separator: "<!--more-->"
+
+header_pages:
+  - about.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - audio
+  - feed.xml
+  - cover.jpg
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
