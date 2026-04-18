@@ -6,6 +6,7 @@ description: "Guilt tripping makes you feel selfish for having boundaries. Learn
 episode_number: 2
 youtube_url: https://youtu.be/viqaeZZk6O4
 youtube_id: viqaeZZk6O4
+duration_minutes: 14
 tags:
   - "boundaries for men"
   - "how to set boundaries"
