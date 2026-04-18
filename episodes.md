@@ -12,6 +12,10 @@ permalink: /episodes/
 <ul class="episode-list">
 {% for post in site.posts %}
   <li class="episode-card">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      <img src="{{ site.baseurl }}/thumbnails/{{ post.slug }}.jpg" alt="{{ post.title }}" class="episode-thumb" loading="lazy">
+    </a>
+    <div class="episode-card-content">
     <div class="episode-number">
       Episode {{ post.episode_number }}
       {% if forloop.first %}<span class="latest-badge">Latest</span>{% endif %}
@@ -27,6 +31,7 @@ permalink: /episodes/
       {% if post.youtube_url %}
         <a href="{{ post.youtube_url }}" class="episode-link-youtube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i> Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
       {% endif %}
+    </div>
     </div>
   </li>
 {% endfor %}
