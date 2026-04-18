@@ -152,6 +152,11 @@ pre, code {
   text-decoration: none !important;
 }
 
+.platform-btn i {
+  font-size: 1.05em;
+}
+
+
 .btn-youtube {
   background: linear-gradient(135deg, #FF0000, #cc0000);
   color: #fff !important;
@@ -493,6 +498,7 @@ pre, code {
   font-size: 0.88rem;
   font-weight: 500;
   &:hover { color: $brand-teal; }
+  i { margin-right: 0.35rem; width: 1.1em; text-align: center; }
 }
 
 // ─── Global headings ─────────────────────────────────────────────────────────
@@ -595,6 +601,7 @@ hr {
 }
 
 .footer-cta p { margin: 0; }
+.footer-cta i { color: $brand-teal; margin-right: 0.3rem; }
 
 // ─── Episodes Page Hero ──────────────────────────────────────────────────────
 .episodes-hero {
