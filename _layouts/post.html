@@ -33,15 +33,15 @@ layout: default
   </div>
 
   <div class="listen-section">
-    <h2>&#127911; Listen to This Episode</h2>
+    <h2><i class="fa-solid fa-headphones"></i> Listen to This Episode</h2>
     <p class="listen-subtitle">Available on all major podcast platforms</p>
     <div class="platform-buttons">
       {% if page.youtube_url %}
-        <a href="{{ page.youtube_url }}" class="platform-btn btn-youtube" target="_blank">&#9654; YouTube</a>
+        <a href="{{ page.youtube_url }}" class="platform-btn btn-youtube" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a>
       {% endif %}
-      <a href="https://open.spotify.com/show/2uoKNnuSgaH1G9shiOMIu8" class="platform-btn btn-spotify" target="_blank">&#9835; Spotify</a>
-      <a href="https://music.amazon.com/podcasts/boundaries-101-for-men" class="platform-btn btn-amazon" target="_blank">&#9835; Amazon Music</a>
-      <a href="{{ site.baseurl }}/feed.xml" class="platform-btn btn-rss">&#128226; RSS Feed</a>
+      <a href="https://open.spotify.com/show/2uoKNnuSgaH1G9shiOMIu8" class="platform-btn btn-spotify" target="_blank"><i class="fa-brands fa-spotify"></i> Spotify</a>
+      <a href="https://music.amazon.com/podcasts/boundaries-101-for-men" class="platform-btn btn-amazon" target="_blank"><i class="fa-brands fa-amazon"></i> Amazon Music</a>
+      <a href="{{ site.baseurl }}/feed.xml" class="platform-btn btn-rss"><i class="fa-solid fa-rss"></i> RSS Feed</a>
     </div>
   </div>
 
@@ -49,13 +49,13 @@ layout: default
   <nav class="post-nav">
     <div class="post-nav-prev">
       {% if page.previous %}
-        <span class="post-nav-label">&larr; Previous Episode</span>
+        <span class="post-nav-label"><i class="fa-solid fa-arrow-left"></i> Previous Episode</span>
         <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a>
       {% endif %}
     </div>
     <div class="post-nav-next">
       {% if page.next %}
-        <span class="post-nav-label">Next Episode &rarr;</span>
+        <span class="post-nav-label">Next Episode <i class="fa-solid fa-arrow-right"></i></span>
         <a href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a>
       {% endif %}
     </div>
