@@ -28,7 +28,5 @@ plugins:
 
 exclude:
   - audio
-  - feed.xml
-  - cover.jpg
   - Gemfile
   - Gemfile.lock
