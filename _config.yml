@@ -8,16 +8,6 @@ theme: minima
 
 author: Boundaries 101 for Men
 
-minima:
-  skin: dark
-  social_links:
-    - platform: youtube
-      user_url: "https://youtube.com/@Boundaries101forMen"
-    - platform: spotify
-      user_url: "https://open.spotify.com/show/2uoKNnuSgaH1G9shiOMIu8"
-    - platform: rss
-      user_url: "https://petermilovcik.github.io/boundaries101-podcast/feed.xml"
-
 show_excerpts: true
 excerpt_separator: "<!--more-->"
 
