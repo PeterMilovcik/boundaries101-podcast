@@ -1,10 +1,13 @@
 ---
-layout: page
+layout: default
 title: Episodes
 permalink: /episodes/
 ---
 
-All episodes of **Boundaries 101 for Men**, newest first.
+<div class="episodes-hero">
+  <h1>&#127911; All Episodes</h1>
+  <p class="episodes-subtitle">{{ site.posts | size }} episodes &mdash; newest first</p>
+</div>
 
 <ul class="episode-list">
 {% for post in site.posts %}
@@ -14,12 +17,15 @@ All episodes of **Boundaries 101 for Men**, newest first.
       {% if forloop.first %}<span class="latest-badge">Latest</span>{% endif %}
     </div>
     <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-    <div class="episode-meta">{{ post.date | date: "%B %d, %Y" }}</div>
+    <div class="episode-meta">
+      {{ post.date | date: "%B %d, %Y" }}
+      {% if post.duration_minutes %}<span class="episode-duration">&middot; {{ post.duration_minutes }} min</span>{% endif %}
+    </div>
     <p class="episode-excerpt">{{ post.description }}</p>
     <div class="episode-links">
-      <a href="{{ post.url | prepend: site.baseurl }}">📖 Read article</a>
+      <a href="{{ post.url | prepend: site.baseurl }}">&#128214; Read article</a>
       {% if post.youtube_url %}
-        <a href="{{ post.youtube_url }}" target="_blank">🎥 Watch on YouTube</a>
+        <a href="{{ post.youtube_url }}" target="_blank">&#127909; Watch on YouTube</a>
       {% endif %}
     </div>
   </li>
