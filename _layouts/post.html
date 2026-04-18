@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%B %d, %Y" }}
+      </time>
+      {% if page.episode_number %}
+        &middot; Episode {{ page.episode_number }}
+      {% endif %}
+    </p>
+  </header>
+
+  {% if page.youtube_id %}
+  <div class="youtube-embed">
+    <iframe 
+      src="https://www.youtube.com/embed/{{ page.youtube_id }}" 
+      title="{{ page.title | escape }}"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+  {% endif %}
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <div class="listen-section">
+    <h2>&#127911; Listen to This Episode</h2>
+    <div class="platform-buttons">
+      {% if page.youtube_url %}
+        <a href="{{ page.youtube_url }}" class="platform-btn btn-youtube">&#9654; YouTube</a>
+      {% endif %}
+      <a href="https://open.spotify.com/show/2uoKNnuSgaH1G9shiOMIu8" class="platform-btn btn-spotify">&#9835; Spotify</a>
+      <a href="https://music.amazon.com/podcasts/boundaries-101-for-men" class="platform-btn btn-amazon">&#9835; Amazon Music</a>
+      <a href="{{ site.baseurl }}/feed.xml" class="platform-btn btn-rss">&#128226; RSS Feed</a>
+    </div>
+  </div>
+
+</article>
