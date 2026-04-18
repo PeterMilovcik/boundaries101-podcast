@@ -6,6 +6,7 @@ description: "Stop sacrificing your needs just to keep others happy. Discover th
 episode_number: 1
 youtube_url: https://youtu.be/3S446PBHJh4
 youtube_id: 3S446PBHJh4
+duration_minutes: 15
 tags:
   - "boundaries for men"
   - "how to set boundaries"
