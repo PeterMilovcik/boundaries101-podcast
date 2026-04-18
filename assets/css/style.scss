@@ -1,0 +1,271 @@
+---
+---
+
+@import
+  "minima/skins/dark",
+  "minima/initialize";
+
+// ─── Brand Colors ───────────────────────────────────────────────────────────
+$brand-navy: #0F2438;
+$brand-teal: #00A896;
+$brand-gold: #D4A574;
+$brand-dark: #0a1929;
+
+// ─── Global Overrides ────────────────────────────────────────────────────────
+body {
+  background-color: $brand-dark;
+}
+
+.site-header {
+  background-color: $brand-navy;
+  border-top: 3px solid $brand-teal;
+  border-bottom: 1px solid rgba($brand-teal, 0.3);
+}
+
+.site-title, .site-title:visited {
+  color: $brand-gold !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.site-nav .page-link {
+  color: rgba(255,255,255,0.85);
+  &:hover { color: $brand-teal; }
+}
+
+// ─── Links ───────────────────────────────────────────────────────────────────
+a { color: $brand-teal; }
+a:hover { color: lighten($brand-teal, 15%); }
+a:visited { color: desaturate($brand-teal, 20%); }
+
+// ─── Hero Section (homepage) ─────────────────────────────────────────────────
+.hero {
+  text-align: center;
+  padding: 2rem 0 2.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba($brand-teal, 0.2);
+}
+
+.hero-cover {
+  width: 200px;
+  height: 200px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 0 2px rgba($brand-teal, 0.3);
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .tagline {
+  color: rgba(255,255,255,0.7);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+// ─── Platform Buttons ────────────────────────────────────────────────────────
+.platform-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.platform-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.platform-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-decoration: none;
+}
+
+.btn-youtube {
+  background: #FF0000;
+  color: #fff;
+  &:hover { background: #cc0000; color: #fff; }
+  &:visited { color: #fff; }
+}
+
+.btn-spotify {
+  background: #1DB954;
+  color: #fff;
+  &:hover { background: #1aa34a; color: #fff; }
+  &:visited { color: #fff; }
+}
+
+.btn-amazon {
+  background: #FF9900;
+  color: #111;
+  &:hover { background: #e68a00; color: #111; }
+  &:visited { color: #111; }
+}
+
+.btn-rss {
+  background: transparent;
+  color: $brand-teal;
+  border-color: $brand-teal;
+  &:hover { background: rgba($brand-teal, 0.1); color: $brand-teal; }
+  &:visited { color: $brand-teal; }
+}
+
+// ─── Episode Cards ───────────────────────────────────────────────────────────
+.episode-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.episode-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba($brand-teal, 0.15);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.episode-card:hover {
+  border-color: rgba($brand-teal, 0.4);
+  background: rgba(255,255,255,0.06);
+}
+
+.episode-card .episode-number {
+  color: $brand-gold;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
+}
+
+.episode-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.episode-card h3 a {
+  color: #fff;
+  text-decoration: none;
+  &:hover { color: $brand-teal; }
+}
+
+.episode-card .episode-meta {
+  color: rgba(255,255,255,0.5);
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.episode-card .episode-excerpt {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.episode-card .episode-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.episode-card .episode-links a {
+  font-size: 0.85rem;
+  color: $brand-teal;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+// ─── Post Page ───────────────────────────────────────────────────────────────
+.post-header .post-title {
+  color: #fff;
+}
+
+.post-content h2 {
+  color: $brand-gold;
+  border-bottom: 1px solid rgba($brand-gold, 0.2);
+  padding-bottom: 0.4rem;
+}
+
+.post-content h3 {
+  color: lighten($brand-teal, 10%);
+}
+
+.post-content blockquote {
+  border-left: 4px solid $brand-teal;
+  background: rgba($brand-teal, 0.05);
+  padding: 0.8rem 1.2rem;
+  border-radius: 0 8px 8px 0;
+  color: rgba(255,255,255,0.85);
+}
+
+// ─── YouTube Embed ───────────────────────────────────────────────────────────
+.youtube-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  border: 1px solid rgba($brand-teal, 0.2);
+}
+
+.youtube-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
+// ─── Listen Section (bottom of posts) ────────────────────────────────────────
+.listen-section {
+  background: rgba($brand-navy, 0.5);
+  border: 1px solid rgba($brand-teal, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.listen-section h2 {
+  color: $brand-gold;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+// ─── Footer ──────────────────────────────────────────────────────────────────
+.site-footer {
+  background-color: $brand-navy;
+  border-top: 1px solid rgba($brand-teal, 0.3);
+}
+
+.footer-heading {
+  color: $brand-gold;
+}
+
+// ─── Responsive ──────────────────────────────────────────────────────────────
+@media (max-width: 600px) {
+  .hero-cover { width: 150px; height: 150px; }
+  .hero h1 { font-size: 1.5rem; }
+  .platform-buttons { flex-direction: column; align-items: center; }
+  .platform-btn { width: 100%; max-width: 280px; justify-content: center; }
+}
