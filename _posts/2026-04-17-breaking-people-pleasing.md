@@ -223,4 +223,3 @@ It starts with one honest answer. The rest is practice. And you’re ready for i
 
 🎥 **Watch on YouTube**: [How to STOP People-Pleasing: The #1 Rule Every Man Needs](https://youtu.be/3S446PBHJh4)
 🎧 **Subscribe to our podcast**: [RSS Feed](https://petermilovcik.github.io/boundaries101-podcast/feed.xml)
-
