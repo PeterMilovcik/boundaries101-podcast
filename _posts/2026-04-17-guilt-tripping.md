@@ -2,7 +2,7 @@
 layout: post
 title: "How to STOP Guilt Tripping Without Feeling Selfish"
 date: 2026-04-17
-description: "Guilt tripping makes you feel selfish for having boundaries."
+description: "Guilt tripping makes you feel selfish for having boundaries. Learn how to recognize emotional manipulation, respond with confidence, and stop letting guilt control your decisions."
 episode_number: 2
 youtube_url: https://youtu.be/viqaeZZk6O4
 youtube_id: viqaeZZk6O4
