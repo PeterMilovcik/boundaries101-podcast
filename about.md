@@ -4,7 +4,13 @@ title: About
 permalink: /about/
 ---
 
-**Boundaries 101 for Men** helps men learn the skills most were never taught — how to set and maintain healthy boundaries in every area of life.
+<div class="about-hero">
+  <img src="{{ site.baseurl }}/cover.jpg" alt="Boundaries 101 for Men">
+</div>
+
+**Boundaries 101 for Men** is a podcast and blog for men who are done being pushed around, guilt-tripped, and taken advantage of.
+
+We break down the practical skills most men were never taught — how to set and maintain healthy boundaries in relationships, at work, with family, and within yourself. No fluff. No therapy-speak. Just honest, real-world coaching you can apply today.
 
 ## What We Cover
 
@@ -14,6 +20,8 @@ permalink: /about/
 - 🏢 Workplace and family boundaries
 - 💬 Communication and self-respect
 - 💪 Building confidence through healthy limits
+- 🧠 Recognizing toxic patterns before they control you
+- 🔄 Breaking cycles passed down through generations
 
 ## Listen & Watch
 
@@ -26,8 +34,6 @@ permalink: /about/
 
 ## Contact
 
-Have a topic suggestion or feedback? Reach us at [adronius@gmail.com](mailto:adronius@gmail.com).
+Have a topic suggestion or feedback? We'd love to hear from you.
 
----
-
-*© 2026 Boundaries 101 for Men. All rights reserved.*
+📧 [adronius@gmail.com](mailto:adronius@gmail.com)
