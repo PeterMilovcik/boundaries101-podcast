@@ -6,6 +6,7 @@ description: "Passive-aggressive behavior can make you question your own gut. Le
 episode_number: 3
 youtube_url: https://youtu.be/c7egP6CObuA
 youtube_id: c7egP6CObuA
+duration_minutes: 12
 tags:
   - "boundaries for men"
   - "how to set boundaries"
