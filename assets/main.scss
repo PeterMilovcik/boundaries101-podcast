@@ -87,9 +87,9 @@ pre, code {
 .hero {
   text-align: center;
   padding: 3.5rem 1rem 3rem;
-  margin: -30px -9999px 0;
-  padding-left: 9999px;
-  padding-right: 9999px;
+  margin: -30px calc(-50vw + 50%) 0;
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
   background:
     radial-gradient(ellipse at 50% 0%, rgba($brand-teal, 0.08) 0%, transparent 60%),
     linear-gradient(180deg, $brand-navy 0%, $brand-dark 100%);
@@ -703,9 +703,9 @@ hr {
 .episodes-hero {
   text-align: center;
   padding: 2.5rem 1rem 2rem;
-  margin: -30px -9999px 2rem;
-  padding-left: 9999px;
-  padding-right: 9999px;
+  margin: -30px calc(-50vw + 50%) 2rem;
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
   background:
     radial-gradient(ellipse at 50% 0%, rgba($brand-teal, 0.06) 0%, transparent 60%),
     linear-gradient(180deg, rgba($brand-navy, 0.8) 0%, transparent 100%);
