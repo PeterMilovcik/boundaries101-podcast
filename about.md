@@ -36,4 +36,4 @@ We break down the practical skills most men were never taught — how to set and
 
 Have a topic suggestion or feedback? We'd love to hear from you.
 
-<i class="fa-solid fa-envelope"></i> [adronius@gmail.com](mailto:adronius@gmail.com)
+<a href="#" class="email-link" data-u="adronius" data-d="gmail.com" onclick="this.href='mailto:'+this.dataset.u+'@'+this.dataset.d"><i class="fa-solid fa-envelope"></i> Contact Us</a>
