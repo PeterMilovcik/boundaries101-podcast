@@ -6,7 +6,7 @@ title: Home
 <div class="hero">
   <img src="{{ site.baseurl }}/cover.jpg" alt="Boundaries 101 for Men" class="hero-cover">
   <h1>Boundaries 101 for Men</h1>
-  <p class="tagline">Practical, no-nonsense coaching for men who want to build and protect their self-respect. Learn the skills most men were never taught.</p>
+  <p class="tagline">Practical coaching for men who want to build and protect their self-respect. Learn the skills most men were never taught.</p>
   
   <div class="platform-buttons">
     <a href="https://youtube.com/@Boundaries101forMen" class="platform-btn btn-youtube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i> YouTube</a>

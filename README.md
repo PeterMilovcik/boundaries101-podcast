@@ -1,6 +1,6 @@
 # Boundaries 101 for Men — Podcast & Blog
 
-Practical, no-nonsense coaching for men who want to build and protect their self-respect. Learn the skills most men were never taught — so you can stop feeling drained and start living on your own terms.
+Practical coaching for men who want to build and protect their self-respect. Learn the skills most men were never taught — so you can stop feeling drained and start living on your own terms.
 
 ## 🎧 Listen
 
