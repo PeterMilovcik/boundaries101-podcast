@@ -12,6 +12,9 @@ $brand-gold-light: #e8c9a6;
 $brand-gold-dark: #b8894e;
 $brand-dark: #091520;
 
+$font-heading: 'Oswald', sans-serif;
+$font-body: 'Montserrat', sans-serif;
+
 $text-color: #d8dde3;
 $background-color: $brand-dark;
 $brand-color: $brand-teal;
@@ -25,6 +28,11 @@ $grey-color-dark: #ccc;
 body {
   background: $brand-dark;
   color: #d0d6dd;
+  font-family: $font-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
 }
 
 ::selection {
@@ -42,13 +50,16 @@ body {
 
 .site-title, .site-title:visited {
   color: $brand-gold !important;
-  font-weight: 800;
-  letter-spacing: 0.5px;
+  font-family: $font-heading;
+  font-weight: 700;
+  letter-spacing: 1px;
   font-size: 1.35rem;
+  text-transform: uppercase;
 }
 
 .site-nav .page-link {
   color: rgba(255,255,255,0.9);
+  font-family: $font-body;
   font-weight: 600;
   letter-spacing: 0.4px;
   transition: color 0.2s;
@@ -114,15 +125,19 @@ pre, code {
 
 .hero h1 {
   color: #fff;
-  font-size: 2.4rem;
+  font-family: $font-heading;
+  font-size: 2.6rem;
   margin-bottom: 0.6rem;
-  letter-spacing: -0.5px;
-  font-weight: 800;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .hero .tagline {
   color: rgba(255,255,255,0.6);
-  font-size: 1.1rem;
+  font-family: $font-body;
+  font-size: 1.05rem;
+  font-weight: 400;
   max-width: 540px;
   margin: 0 auto 2rem;
   line-height: 1.7;
@@ -143,6 +158,7 @@ pre, code {
   gap: 0.5rem;
   padding: 0.65rem 1.3rem;
   border-radius: 10px;
+  font-family: $font-body;
   font-weight: 700;
   font-size: 0.88rem;
   text-decoration: none !important;
@@ -210,6 +226,8 @@ pre, code {
   padding: 0;
   white-space: nowrap;
   font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .section-header::after {
@@ -265,8 +283,9 @@ pre, code {
 
 .episode-card .episode-number {
   color: $brand-gold;
+  font-family: $font-body;
   font-size: 0.72rem;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 0.35rem;
@@ -275,7 +294,8 @@ pre, code {
 .episode-card h3 {
   margin: 0 0 0.4rem;
   font-size: 1.2rem;
-  line-height: 1.4;
+  line-height: 1.35;
+  font-weight: 600;
 }
 
 .episode-card h3 a {
@@ -395,19 +415,24 @@ pre, code {
 
 .post-header .post-title {
   color: #fff;
-  font-size: 2rem;
-  line-height: 1.3;
-  font-weight: 800;
+  font-family: $font-heading;
+  font-size: 2.2rem;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .post-meta {
   color: rgba($brand-gold-light, 0.6);
+  font-family: $font-body;
   font-size: 0.9rem;
   font-weight: 500;
 }
 
 .post-content h2 {
   color: $brand-gold;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
   border-bottom: 2px solid rgba($brand-gold, 0.2);
   padding-bottom: 0.5rem;
   margin-top: 2.5rem;
@@ -415,6 +440,8 @@ pre, code {
 
 .post-content h3 {
   color: $brand-teal;
+  font-size: 1.25rem;
+  letter-spacing: 0.3px;
 }
 
 .post-content blockquote {
@@ -513,7 +540,10 @@ pre, code {
 // ─── Page content on about/episodes ──────────────────────────────────────────
 .page-content .page-heading {
   color: #fff;
-  font-weight: 800;
+  font-family: $font-heading;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   border-bottom: 3px solid;
   border-image: linear-gradient(90deg, $brand-gold, transparent) 1;
   padding-bottom: 0.5rem;
@@ -531,7 +561,9 @@ pre, code {
 
 .footer-heading {
   color: $brand-gold;
-  font-weight: 700;
+  font-family: $font-heading;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .footer-col {
@@ -682,13 +714,17 @@ hr {
 
 .episodes-hero h1 {
   color: #fff;
-  font-size: 2rem;
+  font-family: $font-heading;
+  font-size: 2.2rem;
   margin-bottom: 0.4rem;
-  font-weight: 800;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .episodes-hero .episodes-subtitle {
   color: rgba(255,255,255,0.45);
+  font-family: $font-body;
   font-size: 0.95rem;
   margin: 0;
 }
